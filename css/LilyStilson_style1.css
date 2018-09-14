@@ -1,0 +1,208 @@
+/* JavaScript
+Index page style and some animations implementation 
+Lily Stilson 2018 */
+
+@import url("NexaLight/stylesheet.css");
+@import url("NexaBold/stylesheet.css");
+
+/*@media (min-width : 800px ){*/
+	.navPC {
+		visibility: visible;
+		position: absolute;
+		display: flex;
+   		align-items: center;
+		justify-content: center;
+		width: 100%;
+		z-index: 10;
+		font-size: 20px;
+	}/*
+	.navMB {
+		visibility: hidden;
+	}
+}
+@media (){
+	.navPC {
+		visibility: hidden;
+		font-size: 0px;
+	}
+	.navMB {
+		visibility: visible;
+	}
+}*/
+	
+body, html {
+	height: 100%;
+	font-family: NexaLight;
+	background-color: rgb(0, 25, 49);
+	overflow: hidden;
+}
+
+h1 {
+	font-family: NexaBold;
+	font-size: 50px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-color: white;
+}
+
+p {
+	color: white;
+}
+
+span {
+	color: white;
+}
+
+.panel {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#container {
+	/*position: absolute;*/
+  	display: flex;
+   	align-items: center;
+   	justify-content: center;
+   	height: 100%;
+	width: 100%;
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+}
+
+#particles-js {
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#aboutText {
+	z-index: 6;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+   	height: 0%;
+	width: 100%;
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+}
+#about, #work, #social, #contact  {
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+}
+
+#workText {
+	z-index: 6;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+   	height: 0%;
+	width: 100%;
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+}
+
+#socialText {
+	z-index: 6;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+   	height: 0%;
+	width: 100%;
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+}
+
+#contactText {
+	z-index: 6;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+   	height: 0%;
+	width: 100%;
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+}
+
+#logo {
+	z-index: 8;
+	min-height: 100px;
+	max-height: 500px;
+	min-width: 225px;
+	max-width: 1125px;
+	align-items: center;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+	width: 75%;
+	border: 0;
+	opacity: 1;
+	transition: 1s ease-in;
+	-webkit-transition: 1s ease-in;
+}	
+
+#spoiler {
+	font-family: NexaBold;
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	-webkit-transition: .5s ease-in-out;
+}
+
+#VK, #YouTube, #Soundcloud, #Foreground {
+	z-index: 7;
+}
+
+span > a {
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+}
+
+span > a:hover {
+  color: #FFF;
+}
+
+span > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+span > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
